@@ -1,0 +1,29 @@
+#chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 64px);
+    grid-template-rows: repeat(8, 64px);
+    width: 512px;
+    height: 512px;
+    margin: 150px auto 50px 200px;
+}
+
+.square {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; /* To indicate that the square is clickable */
+}
+
+.light {
+    background-color: #f0d9b5;
+}
+
+.dark {
+    background-color: #b58863;
+}
+
+.istapped {
+    background-color: #ADD8E6; /* Light blue color for tapped square */
+}
